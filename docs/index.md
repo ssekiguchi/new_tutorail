@@ -35,11 +35,11 @@ Prior to this tutorial, download the `LPI_data.csv` from [here](https://github.c
 
 <br/>
 
-This brief slideshow-video introduces some of the fundamental statistical concept as listed below: 
+Some of the fundamental statistical concepts: 
 
-* Data types
-* Statistical distribution 
-* Statistical tests 
+* Data types: 'Categorical' vs. 'Numerical'
+* Statistical distribution: Normal distribution, Binomial distribution, poisson Distribution, etc. 
+* Statistical tests: t-tests, Chi-square test, ANOVA, etc. 
 * Hypothesis testing 
 * p-value
 
@@ -61,12 +61,6 @@ Generally, biological research follows a general procedure of:
 4. Possible conclusion 
 
 <br/>
-
-<figure class="video_container" align="center">
-  <video controls="true" allowfullscreen="true" poster="img/poster.png" width="700">
-    <source src="basic_statistics.mp4" type="video/mp4">
-  </video>
-</figure>
 
 </details>
 
@@ -226,9 +220,9 @@ df1 <- gooseCAUK %>%
 t.test(data = df1, scale_pop*100 ~ Country.list)
 ```
 
-<figure align="center">
-![](img/t-test.png){width=50%}
-</figure>
+<p align="center">
+  <img width="400" height="170" src="img/t-test.PNG">
+</p>
 
 **Welch two sample t-test**
 
@@ -272,9 +266,10 @@ gooseCAUK %>%
 # Save plot 
 ggsave("img/gooseCAUK_plot.png", width = 4, height = 4)
 ```
-<figure align="center">
-![](img/gooseCAUK_plot.png){width=50%}
-</figure>
+
+<p align="center">
+  <img width="500" height="500" src="img/gooseCAUK_plot.png">
+</p>
 
 <br/> 
 
@@ -324,9 +319,9 @@ gooseCA_simp.fit <- lm(data = gooseCA, scale_pop ~ year)
 summary(gooseUK_simp.fit)
 
 ```
-<figure align="center">
-![](img/summary_uk.png){width=50%}
-</figure>
+<p align="center">
+  <img width="400" height="220" src="img/summary_uk.PNG">
+</p>
 
 <br/>
 
@@ -343,9 +338,9 @@ Observation:
 summary(gooseCA_simp.fit)
 
 ```
-<figure align="center">
-![](img/summary_ca.png){width=50%}
-</figure>
+<p align="center">
+  <img width="400" height="220" src="img/summary_ca.PNG">
+</p>
 
 <br/>
 
@@ -378,10 +373,9 @@ Analyze the residuals to validate the linear model
 ```
 plot(gooseUK_simp.fit)
 ```
-
-<figure align="center">
-![](img/gooseUK_r_vs_f.png){width=50%}
-</figure>
+<p align="center">
+  <img width="500" height="500" src="img/gooseUK_r_vs_f.png">
+</p>
 
 <br/>
 
@@ -389,9 +383,9 @@ plot(gooseUK_simp.fit)
 
 <br/>
 
-<figure align="center">
-![](img/gooseUK_q_q.png){width=50%}
-</figure>
+<p align="center">
+  <img width="500" height="500" src="img/gooseUK_q_q.png">
+</p>
 
 <br/>
 
@@ -399,9 +393,9 @@ plot(gooseUK_simp.fit)
 
 <br/>
 
-<figure align="center">
-![](img/gooseUK_scale_location.png){width=50%}
-</figure>
+<p align="center">
+  <img width="500" height="500" src="img/gooseUK_scale_location.png">
+</p>
 
 <br/>
 
@@ -412,9 +406,9 @@ plot(gooseUK_simp.fit)
 
 <br/>
 
-<figure align="center">
-![](img/gooseUK_r_vs_l.png){width=50%}
-</figure>
+<p align="center">
+  <img width="500" height="500" src="img/gooseUK_r_vs_l.png">
+</p>
 
 <br/>
 
@@ -440,9 +434,9 @@ Hence, we can make a possible deduction that the goose data set were suitable fo
 plot(gooseCA_simp.fit)
 ```
 
-<figure align="center">
-![](img/gooseCA_r_vs_f.png){width=50%}
-</figure>
+<p align="center">
+  <img width="500" height="500" src="img/gooseCA_r_vs_f.png">
+</p>
 
 <br/>
 
@@ -451,9 +445,9 @@ plot(gooseCA_simp.fit)
 
 <br/>
 
-<figure align="center">
-![](img/gooseCA_q_q.png){width=50%}
-</figure>
+<p align="center">
+  <img width="500" height="500" src="img/gooseCA_q_q.png">
+</p>
 
 <br/>
 
@@ -461,9 +455,9 @@ plot(gooseCA_simp.fit)
 
 <br/>
 
-<figure align="center">
-![](img/gooseCA_scale_location.png){width=50%}
-</figure>
+<p align="center">
+  <img width="500" height="500" src="img/gooseCA_scale_location.png">
+</p>
 
 <br/>
 
@@ -474,9 +468,9 @@ plot(gooseCA_simp.fit)
 
 <br/>
 
-<figure align="center">
-![](img/gooseCA_r_vs_l.png){width=50%}
-</figure>
+<p align="center">
+  <img width="500" height="500" src="img/gooseCA_r_vs_l.png">
+</p>
 
 <br/> 
 
